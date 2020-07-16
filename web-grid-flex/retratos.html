@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleFlex.css">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class="navbarBox">
+        <div class="nav">
+           <div><a href="index.html"><img src="img/logo.png" alt="logo"><i>Picture Shot</i></a></div>
+            <div><a href="#option1">Inicio</a></div>
+            <div><a href="#option2">Frontal</a></div>
+            <div><a href="#option3">Perfil</a></div>
+            <div><a href="#option4">Contrapicado</a></div>
+            <div><a href="#option5">Secciones</a></div>
+        </div>
+    </div>
+
+    <!--Menu Burger-->
+    <div class="navbarBox" id="burger">
+        <div class="nav">
+            <a href="index.html"><img src="img/logo.png" alt="logo"><i>Picture Shot</i></a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon burger-icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="linkBurger">
+            <div><a href="#option1">Inicio</a></div>
+            <div><a href="#option2">Frontal</a></div>
+            <div><a href="#option3">Perfil</a></div>
+            <div><a href="#option4">Contrapicado</a></div>
+            <div><a href="#option5">Secciones</a></div>
+        </div>
+    </div>
+
+    <div class="flexContainer">
+
+        <div class="headerFlex" id="option1"><img src="img/kidText.jpg" alt=""></div>
+
+        <div class="textFlex" id="option2">
+            <h1>“Describir es destruir, sugerir es crear”. Robert Doisneau</h1>
+        </div>
+
+        <div>
+            <div class="mosaic">
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/foto01.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/foto02.jfif" alt=""></div>
+                <div class="photoMedium"><img src="img/foto02.jfif" alt=""></div>
+                <div class="photoMedium"><img src="img/foto02.jfif" alt=""></div>
+                <div class="photoMedium"><img src="img/foto03.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/foto03.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/foto03.jpg" alt=""></div>
+                <div class="photoLarge"><img src="img/example.jpg" alt=""></div>
+            </div>
+
+        </div>
+        <div class="textFlex" id="option3">
+            <h1>“No hay reglas para las buenas fotografías, son solo buenas fotografías”. Ansel Adams</h1>
+        </div>
+
+        <div>
+            <div class="mosaic">
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoSmall"><img src="img/perfil01.jfif" alt=""></div>
+                <div class="photoMedium"><img src="img/perfil02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/perfil02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/perfil02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/perfil02.jpg" alt=""></div>
+                <div class="photoLarge"><img src="img/example02.jpg" alt=""></div>
+
+            </div>
+        </div>
+        
+        <div class="textFlex" id="option4">
+            <h1>“La fotografia es un secreto de un secreto. Cuanto mas te dice, menos sabes“ Diane Arbus</h1>
+        </div>
+    
+         <div>
+            <div class="mosaic">
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoSmall"><img src="img/example03.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/contrapicado02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/contrapicado02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/contrapicado02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/contrapicado02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/contrapicado02.jpg" alt=""></div>
+                <div class="photoMedium"><img src="img/contrapicado02.jpg" alt=""></div>
+                <div class="photoLarge"><img src="img/contrapicado01.jpg" alt=""></div>
+
+            </div>
+        </div>
+        <div class="textFlex" id="option5">
+            <h1>“Para poder disparar una foto necesito emocionarme” Cristina García Rodero</h1>
+        </div>
+    </div>
+
+    <div class="boxContainer">
+        <div><img src="img/kidText.jpg" alt=""></div>
+        <div><img src="img/cameraText.jpg" alt=""></div>
+        <div><img src="img/roadText.jpg" alt=""></div>
+        <div><img src="img/concertText.jpg" alt=""></div>
+    </div>
+    
+    <br>
+
+    <div class="footer">
+         &#169;Alexandre Manuel Balata Souto
+    </div>
+</body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("linkBurger");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</html>

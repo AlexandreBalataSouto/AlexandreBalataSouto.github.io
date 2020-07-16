@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <div class="navbarBox">
+        <div class="nav" class="active">
+            <a href="index.html"><img src="img/logo.png" alt="logo"><i>Picture Shot</i></a>
+            <a href="#option1">Inicio</a>
+            <a href="#option2">Ejemplos</a>
+            <a href="#option3">Suscripción</a>
+            <a href="#option4">Secciones</a>
+        </div>
+    </div>
+    <!--Menu Burger-->
+    <div class="navbarBox" id="burger">
+        <div class="nav">
+            <a href="index.html"><img src="img/logo.png" alt="logo"><i>Picture Shot</i></a>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon burger-icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="linkBurger">
+            <div><a href="#option1">Inicio</a></div>
+            <div><a href="#option2">Ejemplos</a></div>
+            <div><a href="#option3">Suscripción</a></div>
+            <div><a href="#option4">Secciones</a></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header" id="option1"><img src="img/header.jpg" alt="header image"></div>
+
+        <div class="text" id="option2">
+            <h1>“La fotografía ayuda a las personas a ver”. Berenice Abbott</h1>
+        </div>
+
+        <div class="menuBlock">
+            <h1>Mejores fotos</h1>
+            <hr>
+            <div id="playa">
+                <h2>Playa</h2>
+            </div>
+            <hr>
+            <div id="montaña">
+                <h2>Montaña</h2>
+            </div>
+            <hr>
+            <div id="bosque">
+                <h2>Bosque</h2>
+            </div>
+            <hr>
+            <div id="oceano">
+                <h2>Oceano</h2>
+            </div>
+            <hr>
+            <div id="desierto">
+                <h2>Desierto</h2>
+            </div>
+            <hr>
+            <div id="cielo">
+                <h2>Cielo</h2>
+            </div>
+            <hr>
+        </div>
+
+        <div class="block">
+            <img src="img/beach.jpg" alt="beach image" id="beachImage">
+            <img src="img/mountain.jpg" alt="mountain image" id="mountainImage">
+            <img src="img/forest.jpg" alt="forest image" id="forestImage">
+            <img src="img/ocean.jpg" alt="ocean image" id="oceanImage">
+            <img src="img/desert.jpg" alt="desert image" id="desertImage">
+            <img src="img/sky.jpg" alt="sky image" id="skyImage">
+            <img src="img/city.jpg" alt="city image" id="cityImage">
+            <img src="img/star.jpg" alt="star image" id="starImage">
+        </div>
+
+
+        <div class="formAccess" id="option3">
+            <a href="formulario.html"><img src="img/subcriptionText.jpg" alt="sign image"></a>
+        </div>
+
+
+        <div class="section01"><a href="retratos.html"><img src="img/kidText.jpg" alt="kid image"></a></div>
+
+        <div class="section02"><img src="img/cameraText.jpg" alt="camera image"></div>
+
+        <div class="section03"><img src="img/roadText.jpg" alt="road image"></div>
+
+        <div class="section04"><img src="img/concertText.jpg" alt="concert image"></div>
+
+        <div class="footer" id="option4">
+            &#169;Alexandre Manuel Balata Souto
+        </div>
+    </div>
+</body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("linkBurger");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    $(document).ready(function () {
+
+        $("#playa").hover(function () {
+            $("#mountainImage").css("display", "none");
+            $("#forestImage").css("display", "none");
+            $("#oceanImage").css("display", "none");
+            $("#desertImage").css("display", "none");
+            $("#skyImage").css("display", "none");
+            $("#cityImage").css("display", "none");
+            $("#starImage").css("display", "none");
+            $("#beachImage").css("display", "block");
+        });
+
+        $("#montaña").hover(function () {
+            $("#beachImage").css("display", "none");
+            $("#forestImage").css("display", "none");
+            $("#oceanImage").css("display", "none");
+            $("#desertImage").css("display", "none");
+            $("#skyImage").css("display", "none");
+            $("#cityImage").css("display", "none");
+            $("#starImage").css("display", "none");
+            $("#mountainImage").css("display", "block");
+        });
+
+        $("#bosque").hover(function () {
+            $("#mountainImage").css("display", "none");
+            $("#beachImage").css("display", "none");
+            $("#oceanImage").css("display", "none");
+            $("#desertImage").css("display", "none");
+            $("#skyImage").css("display", "none");
+            $("#cityImage").css("display", "none");
+            $("#starImage").css("display", "none");
+            $("#forestImage").css("display", "block");
+        });
+
+        $("#oceano").hover(function () {
+            $("#mountainImage").css("display", "none");
+            $("#forestImage").css("display", "none");
+            $("#beachImage").css("display", "none");
+            $("#desertImage").css("display", "none");
+            $("#skyImage").css("display", "none");
+            $("#cityImage").css("display", "none");
+            $("#starImage").css("display", "none");
+            $("#oceanImage").css("display", "block");
+        });
+
+        $("#desierto").hover(function () {
+            $("#mountainImage").css("display", "none");
+            $("#forestImage").css("display", "none");
+            $("#beachImage").css("display", "none");
+            $("#oceanImage").css("display", "none");
+            $("#skyImage").css("display", "none");
+            $("#cityImage").css("display", "none");
+            $("#starImage").css("display", "none");
+            $("#desertImage").css("display", "block");
+        });
+
+        $("#cielo").hover(function () {
+            $("#mountainImage").css("display", "none");
+            $("#forestImage").css("display", "none");
+            $("#beachImage").css("display", "none");
+            $("#oceanImage").css("display", "none");
+            $("#desertImage").css("display", "none");
+            $("#cityImage").css("display", "none");
+            $("#starImage").css("display", "none");
+            $("#skyImage").css("display", "block");
+        });
+
+        $("#ciudad").hover(function () {
+            $("#mountainImage").css("display", "none");
+            $("#forestImage").css("display", "none");
+            $("#beachImage").css("display", "none");
+            $("#oceanImage").css("display", "none");
+            $("#desertImage").css("display", "none");
+            $("#skyImage").css("display", "none");
+            $("#starImage").css("display", "none");
+            $("#cityImage").css("display", "block");
+
+        });
+
+        $("#estrellas").hover(function () {
+            $("#mountainImage").css("display", "none");
+            $("#forestImage").css("display", "none");
+            $("#beachImage").css("display", "none");
+            $("#oceanImage").css("display", "none");
+            $("#desertImage").css("display", "none");
+            $("#skyImage").css("display", "none");
+            $("#cityImage").css("display", "none");
+            $("#starImage").css("display", "block");
+
+        });
+    });
+</script>
+
+</html>

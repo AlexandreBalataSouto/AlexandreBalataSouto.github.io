@@ -1,0 +1,249 @@
+html {
+    /*ME ENCANTA. Scroll suave*/
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+img {
+    /* Las imagenes por defecto tiene un 80% de su tamaño*/
+    width: 80%;
+}
+
+/* Esta seccion es para que las imagenes de Ejemplos(En index) esten ocultas*/
+#beachImage {
+    display: block;
+}
+
+#mountainImage {
+    display: none;
+}
+
+#forestImage {
+    display: none;
+}
+
+#oceanImage {
+    display: none;
+}
+
+#desertImage {
+    display: none;
+}
+
+#skyImage {
+    display: none;
+}
+
+#cityImage {
+    display: none;
+}
+
+#starImage {
+    display: none;
+}
+
+/*Fin de la seccion Ejemplos*/
+
+.navbarBox div {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    /*Mediante grid todas las cajas(div) de la barra de navegacion se colocan como columnas y se adaptan al espacio */
+}
+
+.navbarBox {
+    position: fixed;
+    width: 92%;
+    margin-left: 2%;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 2% 2%;
+}
+
+a[href*="option"] {
+    /*Apuntamos a los link cuyo href tenga "option"*/
+    color: white;
+    font-size: 1.3em;
+}
+
+a[href*="index.html"] {
+    /*Apuntamos a los link cuyo href tenga "index.html"*/
+    color: #FCB2F3;
+    font-size: 2em;
+}
+
+img[src*="img/logo.png"] {
+    /*Apuntamos a los link cuyo href tenga "img/logo.png"*/
+    width: 5%;
+}
+
+.header {
+    /*Creamos un grid-area para la cabecera*/
+    grid-area: header;
+    text-align: center;
+}
+
+.footer {
+    /*Creamos un grid-area para el pie de la pagina*/
+    grid-area: footer;
+    text-align: center;
+}
+
+.text {
+    /*Creamos un grid-area para un texto (Las frases que aparecen en la pagina)*/
+    grid-area: text;
+    text-align: center;
+}
+
+.block {
+    /*Creamos un grid-area para un bloque donde iran las imagenes de los Ejemplos(index)*/
+    grid-area: block;
+
+}
+
+.block img {
+    /*Todas la imagenes dentro del bloque*/
+    border: 1px solid black;
+    width: 80%;
+    height: 80%;
+    margin-left: 9%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.menuBlock {
+    /*Creamos un grid-area para un menu que determina que imagenes aparecen en el bloque*/
+    grid-area: menuBlock;
+    text-align: center;
+}
+
+.menuBlock div {
+    margin-top: 10%;
+}
+
+
+.formAccess {
+    /*Creamos un grid-area para introducir una imagen que sirve de acceso al formulario*/
+    grid-area: formAccess;
+    text-align: center;
+
+}
+
+/*Cada seccion es un grid-area*/
+.section01 {
+    grid-area: section01;
+    text-align: center;
+
+}
+
+.section02 {
+    grid-area: section02;
+    text-align: center;
+
+}
+
+.section03 {
+    grid-area: section03;
+    text-align: center;
+
+}
+
+.section04 {
+    grid-area: section04;
+    text-align: center;
+
+}
+
+.container {
+    margin: 1%;
+    display: grid;
+    grid-gap: 0.5%;
+    /*Separacion entre los grid area*/
+    grid-template-columns: 9fr 10.7fr 10.9fr 9fr;
+    /*Tamaño*/
+    grid-template-areas:
+        /*Plantilla de la pagina. Disposicion de los grid-area*/
+        "header header header header"
+        "text text text text"
+        "menuBlock block block block"
+        "formAccess formAccess formAccess formAccess"
+        "section01 section02 section03 section04"
+        "footer footer footer footer"
+}
+
+.container>div {
+    /*Los hijos directos (div) de la clase container tiene el fondo gris*/
+    background-color: #9E9E9E;
+}
+
+/*--------------------------------FORM--------------------------*/
+
+
+form {
+    width: 100%;
+    background-color: #9E9E9E;
+    font-size: 1.3em;
+}
+
+.datos01 {
+    /*Los campos dentro de datos01 se colocan como una fila para alinearlos*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.datos02 {
+    /*Los campos dentro de datos02 se colocan como una fila para alinearlos*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+textarea {
+    resize: none;
+}
+
+.datos03 {
+    float: left;
+    margin-left: 7%;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+/*--------------------------------Burger Menu--------------------------*/
+#burger {
+    display: none;
+}
+
+#linkBurger {
+    display: none;
+}
+
+#linkBurger a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1%;
+}
+
+.burger-icon {
+    font-size: 5em;
+}
+
+/*--------------------------------Media Query--------------------------*/
+@media screen and (max-width: 1200px) {
+    #burger {
+        display: block;
+    }
+}
