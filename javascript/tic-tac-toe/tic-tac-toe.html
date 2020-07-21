@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<style>
+    .resetButton{
+        display: none;
+    }
+</style>
+
+<body>
+    <div id="box"></div>
+    <div class="resetButton">
+        <button onclick="location.reload()">Play again</button>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    $(document).ready(function () {
+
+        function checkWinner() {
+
+            var winner = [];
+
+            for (var i = 0; i < 9; i++) {
+                winner[i] = $("#box" + i).text();
+            }
+
+
+            for (var i = 0; i < 9; i++) {
+                console.log(winner);
+                //HORIZONTAL
+                if (winner[0] == winner[1] && winner[1] == winner[2] && winner[1] != "") {
+
+                    return true;
+                }
+
+                if (winner[3] == winner[4] && winner[4] == winner[5] && winner[4] != "") {
+                    return true;
+                }
+                if (winner[6] == winner[7] && winner[7] == winner[8] && winner[7] != "") {
+
+                    return true;
+                }
+
+                //VERTICAL
+                if (winner[0] == winner[3] && winner[3] == winner[6] && winner[3] != "") {
+
+                    return true;
+                }
+                if (winner[1] == winner[4] && winner[4] == winner[7] && winner[4] != "") {
+
+                    return true;
+                }
+                if (winner[2] == winner[5] && winner[5] == winner[8] && winner[5] != "") {
+
+                    return true;
+                }
+
+                //DIAGONAL
+                if (winner[0] == winner[4] && winner[4] == winner[8] && winner[4] != "") {
+
+                    return true;
+                }
+                if (winner[2] == winner[4] && winner[4] == winner[6] && winner[4] != "") {
+
+                    return true;
+                }
+            }
+        } //END FUNCTION CHECKWINNER()
+
+        var boxPosition = ["box0", "box1", "box2", "box3", "box4", "box5", "box6", "box7", "box8"];
+        var cont = 0;
+
+        $("#box").css({
+            "width": "200px",
+            "margin": "0px auto",
+        });
+
+        for (var i = 0; i < 9; i++) {
+            $("#box").append("<div id=box" + i + ">");
+
+            $("#box").children().css({
+                "width": "50",
+                "height": "50",
+                "float": "left",
+                "border": "1px solid black"
+            });
+
+        } //END FOR 9
+
+        $("#box").on("click", "div", function (e) {
+            var promise = new Promise(function (resolve, reject) { //PROMISE
+                if ($("#" + e.target.id).html() == "") {
+                    cont++;
+                    resolve("GOOD");
+                } else {
+                    reject("BAD");
+
+                }
+            }); //END PROMISE
+
+            promise.then(function (result) {
+                var index = boxPosition.indexOf(e.target.id);
+                boxPosition.splice(index, 1);
+
+                $("#" + e.target.id).css({
+                    "fontSize": "50px",
+                    "textAlign": "center",
+                });
+                $("#" + e.target.id).text("X");
+                $("#" + e.target.id).css({
+                    "fontSize": "50px",
+                    "textAlign": "center",
+                });
+
+                if (checkWinner()) {
+                    alert("You win!"); //function check if we win
+                    $(".resetButton").css("display","block");
+                } else {
+                    setTimeout(() => { //Here is a setTimeout, why not
+                        var o = boxPosition[Math.floor((Math.random() * boxPosition
+                            .length))];
+                        var index = boxPosition.indexOf(o);
+                        o = document.getElementById(o);
+                        boxPosition.splice(index, 1);
+                        o.style.fontSize = "50px";
+                        o.style.textAlign = "center";
+                        o.innerHTML = "O";
+
+                        if (checkWinner()) {
+                            alert("You lose!");
+                        }
+
+                    }, 1000);
+                }
+
+            }).catch(function (fail) { //Catch reject case
+                alert("YOU SHALL NOT CHANGE THIS!");
+            });
+
+        }); //END FUNCTION ADD X
+
+    }); //END JQUERY FUNCTION
+</script>
