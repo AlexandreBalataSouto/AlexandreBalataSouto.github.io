@@ -31,7 +31,7 @@ var language = {
 
 document.addEventListener("DOMContentLoaded", function (event) {
     if (!window.location.hash) {
-        window.location.href = '#es';
+        window.location.href = '#eng';
         location.reload();
     }
 });
