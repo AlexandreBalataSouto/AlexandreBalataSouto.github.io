@@ -9,22 +9,21 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-<style>
-    .card {
-        margin: auto;
-    }
-
-    .rounded-circle {
-        width: 8rem;
-    }
-
-    img {
-        max-height: 190px;
-    }
-</style>
+<link rel="stylesheet" href="css/main.css">
 
 <body>
     <div class="container">
+        
+        <div class="row">
+            <div class="col-12">
+                <a href="#" onclick="window.location.href='#eng'; location.reload()"><img src="img/uk_icon.png" alt="english" class="lang-icon"></a>
+                <a href="#" onclick="window.location.href='#es'; location.reload()"><img src="img/spain_icon.png" alt="español" class="lang-icon"></a>
+            </div>
+            <p id="welcomeId" class="px-3">
+                Welcome everyone!
+            </p>
+        </div>
+        
         <div class="row">
             <div class="col-12 text-center mt-3">
                 <img src="img/foto-perfil.png" alt="foto-perfil" class="rounded-circle">
@@ -32,7 +31,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center display-4 text-primary">Alexandre M. Balata Souto's Portfolio</h1>
+                <h1 class="text-center display-4 text-primary" id="titleId">Alexandre M. Balata Souto's Portfolio</h1>
             </div>
         </div>
         <div class="d-flex justify-content-center">
@@ -51,12 +50,10 @@
                     <img src="img/header.jpg" class="card-img-top" alt="foto-web-grid-flex">
                     <div class="card-body">
                         <h5 class="card-title">Picture shot</h5>
-                        <p class="card-text">This is an example website made by <strong>grid</strong> and
-                            <strong>flexbox</strong>. The grid one is the main page and the other one just click on
-                            "Retratos"</p>
+                        <p class="card-text" id="pictureShotId"></p>
                     </div>
                     <div class="card-footer bg-transparent">
-                        <a href="web-grid-flex/index.html" class="btn btn-primary btn-block">Go to Picture shot</a>
+                        <a href="web-grid-flex/index.html" class="btn btn-primary btn-block" id="goToPictureShot"></a>
                     </div>
                 </div>
             </div>
@@ -65,12 +62,10 @@
                     <img src="img/vr-header.jpg" class="card-img-top" alt="foto-vr-station-4-education">
                     <div class="card-body">
                         <h5 class="card-title">VR station 4 education</h5>
-                        <p class="card-text">I made this website with <strong>Wordpress</strong> to help a client with
-                            his crowdfunding campaign.</p>
+                        <p class="card-text" id="vrStationId"></p>
                     </div>
                     <div class="card-footer bg-transparent">
-                        <a href="https://vrstation4education.com/" class="btn btn-primary btn-block">Go to
-                            vrstation4education</a>
+                        <a href="https://vrstation4education.com/" class="btn btn-primary btn-block" id="goToVrStation"></a>
                     </div>
                 </div>
             </div>
@@ -79,10 +74,10 @@
                     <img src="img/js-logo.png" class="card-img-top" alt="foto-javascript-logo">
                     <div class="card-body">
                         <h5 class="card-title">Javascrip</h5>
-                        <p class="card-text">Javascrip examples</p>
+                        <p class="card-text" id="javascriptId"></p>
                     </div>
                     <div class="card-footer bg-transparent">
-                        <a href="javascript/index.html" class="btn btn-primary btn-block">Go to examples</a>
+                        <a href="javascript/index.html" class="btn btn-primary btn-block" id="goToExamples"></a>
                     </div>
                 </div>
             </div>
@@ -91,22 +86,12 @@
                     <img src="img/leaves.jpg" class="card-img-top" alt="foto-gevil-leaves">
                     <div class="card-body">
                         <h5 class="card-title">GEVIL</h5>
-                        <p class="card-text">
-                            This is a project I made with a classmate, basically it´s an app for the
-                            management of invasive vegetal species made by the framework <strong>Laravel</strong>
-                            <br>
-                            <strong>Here you´ll find only my part of the project.</strong>
-                            <p>
-                                <strong>Login Access:</strong>
-                                <br>
-                                Email: gevil@example.com
-                                Password: gevil1234
-                            </p>
+                        <p class="card-text" id="gevilId">
+                            
                         </p>
                     </div>
                     <div class="card-footer bg-transparent">
-                        <a href="https://fast-mountain-57742.herokuapp.com/en" class="btn btn-primary btn-block">Go to
-                            GEVIL</a>
+                        <a href="https://fast-mountain-57742.herokuapp.com/en" class="btn btn-primary btn-block" id="goToGevil"></a>
                     </div>
                 </div>
             </div>
@@ -116,27 +101,15 @@
                     <div class="card-body">
                         <br>
                         <h5 class="card-title">KDB</h5>
-                        <p class="card-text">
-                            Here is my Superior Grade Formative Course final project of web application development.
-                            The idea was to help a small karate dojo of Lanzarote with the management of the students
-                            data, asistence and events.
-                            This project was made with <strong>Laravel</strong>, <strong>Materialize</strong> and it´s
-                            <strong>responsive</strong>
-                            <p>
-                                <strong>Login Access:</strong>
-                                <br>
-                                Email: kdb@example.com
-                                Password: csas1234
-                            </p>
-                        </p>
+                        <p class="card-text" id="kdbId"></p>
                     </div>
                     <div class="card-footer bg-transparent">
-                        <a href="http://kdb-test.es/" class="btn btn-primary btn-block">Go to KDB</a>
+                        <a href="http://kdb-test.es/" class="btn btn-primary btn-block" id="goToKDB">Go to KDB</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
+<script src="js/main.js"></script>
 </html>

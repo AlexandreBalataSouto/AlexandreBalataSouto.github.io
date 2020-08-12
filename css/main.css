@@ -1,0 +1,13 @@
+.card {
+    margin: auto;
+}
+.rounded-circle {
+    width: 8rem;
+}
+
+img {
+    max-height: 190px;
+}
+.lang-icon{
+    width: 2rem;
+}
