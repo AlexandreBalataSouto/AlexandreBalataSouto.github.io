@@ -1,0 +1,39 @@
+.calculadora{
+    background-color: #26A69A;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+}
+
+.pantalla{
+    border: 1px solid black;
+    background-color: white;
+    width: 354px;
+    height: 60px;
+    margin-top: 6%;
+    margin-left: 6%;
+    text-align: right;
+    font-size: 50px;
+}
+
+
+
+.botones{
+    width: 362px;
+    height: 360px;
+    margin-top: 6%;
+    margin-left: 6%;
+}
+
+.botones table{
+    width: 100%;
+    height: 100%;
+}
+
+.botones table tr td button{
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+}

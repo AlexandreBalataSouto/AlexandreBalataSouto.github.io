@@ -1,3 +1,4 @@
+
 .card {
     margin: auto;
 }
@@ -10,4 +11,7 @@ img {
 }
 .lang-icon{
     width: 2rem;
+}
+.projectDate{
+    color:grey;
 }
