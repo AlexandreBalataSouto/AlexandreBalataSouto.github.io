@@ -7,10 +7,12 @@
 }
 
 img {
-    max-height: 190px;
+    width: 100%;
+    height: 200px;
 }
 .lang-icon{
     width: 2rem;
+    height: 2rem;
 }
 .projectDate{
     color:grey;
