@@ -4,28 +4,13 @@ body {
     background-color: $background-color;
 }
 
-.card {
-    margin: auto;
-    background-color: transparent;
-    border: 1px solid $border-card-color;
-
-    .card-footer {
-        border-top: 1px solid $background-color;
-    }
-}
-
-.rounded-circle {
-    width: 8rem;
-}
-
-img {
-    width: 100%;
-    height: 200px;
-}
-
 .lang-icon {
     width: 2rem;
     height: 2rem;
+}
+
+.avatar {
+    width: 8rem;
 }
 
 i {
@@ -33,9 +18,29 @@ i {
     z-index: 1;
 }
 
-.projectDate {
-    color: $project-date-color;
+.card {
+    margin: auto;
+    background-color: transparent;
+    border: 3px solid $border-card-color;
+    border-radius: 25px;
+
+    .card-img-top {
+        border-radius: 20px;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .projectDate {
+        color: $project-date-color;
+    }
+
+    .card-footer {
+        border-top: 1px solid $background-color;
+    }
 }
+
+
 
 //Animate
 .animate-box {

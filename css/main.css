@@ -2,27 +2,13 @@ body {
   background-color: #29dbc9;
 }
 
-.card {
-  margin: auto;
-  background-color: transparent;
-  border: 1px solid #23272B;
-}
-.card .card-footer {
-  border-top: 1px solid #29dbc9;
-}
-
-.rounded-circle {
-  width: 8rem;
-}
-
-img {
-  width: 100%;
-  height: 200px;
-}
-
 .lang-icon {
   width: 2rem;
   height: 2rem;
+}
+
+.avatar {
+  width: 8rem;
 }
 
 i {
@@ -30,8 +16,22 @@ i {
   z-index: 1;
 }
 
-.projectDate {
+.card {
+  margin: auto;
+  background-color: transparent;
+  border: 3px solid #23272B;
+  border-radius: 25px;
+}
+.card .card-img-top {
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+}
+.card .projectDate {
   color: white;
+}
+.card .card-footer {
+  border-top: 1px solid #29dbc9;
 }
 
 .animate-box {
