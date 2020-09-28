@@ -19,6 +19,9 @@ var language = {
         vueLaravel: "A SPA (single page application) made with the javascript framework <strong>Vue.js</strong> and the php framework <strong>Laravel</strong>",
         goToVueLaravel: "Go to Vue-Laravel",
         projectDate08: "Project date: August 2020",
+        vueQuiz: "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>",
+        goToVueQuiz: "Go to Vue-Quiz",
+        projectDate09: "Project date: September 2020",
         
     },
     es: {
@@ -41,6 +44,9 @@ var language = {
         vueLaravel: "Una SPA (single page application) hecha con el framework de javascript <strong>Vue.js</strong> y el framework de php <strong>Laravel</strong>",
         goToVueLaravel: "Ir a Vue-Laravel",
         projectDate08: "Fecha del proyecto: Agosto 2020",
+        vueQuiz: "Esto es un test sobre cine hecho con el framework de javascript <strong>Vue.js</strong>",
+        goToVueQuiz: "Ir a Vue-Quiz",
+        projectDate09: "Fecha del proyecto: Septiembre 2020",
     }
 }
 
@@ -73,6 +79,10 @@ if (window.location.hash) {
         vueLaravelId.innerHTML = language.es.vueLaravel;
         goToVueLaravel.innerHTML = language.es.goToVueLaravel;
         projectDate08.innerHTML = language.es.projectDate08;
+        vueQuizId.innerHTML = language.es.vueQuiz;
+        goToVueQuiz.innerHTML = language.es.goToVueQuiz;
+        projectDate09.innerHTML = language.es.projectDate09;
+
     } else if (window.location.hash === "#eng") {
         welcomeId.innerHTML = language.eng.welcome;
         titleId.innerHTML = language.eng.title;
@@ -94,5 +104,8 @@ if (window.location.hash) {
         vueLaravelId.innerHTML = language.eng.vueLaravel;
         goToVueLaravel.innerHTML = language.eng.goToVueLaravel;
         projectDate08.innerHTML = language.eng.projectDate08;
+        vueQuizId.innerHTML = language.eng.vueQuiz;
+        goToVueQuiz.innerHTML = language.eng.goToVueQuiz;
+        projectDate09.innerHTML = language.eng.projectDate09;
     }
 }
