@@ -20,7 +20,7 @@ var language = {
         goToVueLaravel: "Go to Vue-Laravel",
         projectDate08: "Project date: August 2020",
         vueQuiz: "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>",
-        goToVueQuiz: "Go to Vue-Quiz",
+        goToVueQuiz: "Go to Vue Quiz",
         projectDate09: "Project date: September 2020",
         
     },
@@ -45,7 +45,7 @@ var language = {
         goToVueLaravel: "Ir a Vue-Laravel",
         projectDate08: "Fecha del proyecto: Agosto 2020",
         vueQuiz: "Esto es un test sobre cine hecho con el framework de javascript <strong>Vue.js</strong>",
-        goToVueQuiz: "Ir a Vue-Quiz",
+        goToVueQuiz: "Ir a Vue Quiz",
         projectDate09: "Fecha del proyecto: Septiembre 2020",
     }
 }
