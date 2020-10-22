@@ -19,7 +19,7 @@ var language = {
         vueLaravel: "A SPA (single page application) made with the javascript framework <strong>Vue.js</strong> and the php framework <strong>Laravel</strong>",
         goToVueLaravel: "Go to Vue-Laravel",
         projectDate08: "Project date: August 2020",
-        vueQuiz: "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>",
+        vueQuiz: "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>. All test questions are from here: <a href='https://opentdb.com/'>Open Trivia Database</a>",
         goToVueQuiz: "Go to Vue Quiz",
         projectDate09: "Project date: September 2020",
         
@@ -44,7 +44,7 @@ var language = {
         vueLaravel: "Una SPA (single page application) hecha con el framework de javascript <strong>Vue.js</strong> y el framework de php <strong>Laravel</strong>",
         goToVueLaravel: "Ir a Vue-Laravel",
         projectDate08: "Fecha del proyecto: Agosto 2020",
-        vueQuiz: "Esto es un test sobre cine hecho con el framework de javascript <strong>Vue.js</strong>",
+        vueQuiz: "Esto es un test sobre cine hecho con el framework de javascript <strong>Vue.js</strong>. Todas las preguntas del test son de aqui: <a href='https://opentdb.com/'>Open Trivia Database</a>",
         goToVueQuiz: "Ir a Vue Quiz",
         projectDate09: "Fecha del proyecto: Septiembre 2020",
     }
