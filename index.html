@@ -2,120 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Portfolio</title>
 </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-<link rel="stylesheet" href="css/main.css">
 
-<body>
-    <div class="container">
-
-        <div class="row">
-            <div class="col-12">
-                <a href="#" onclick="window.location.href='#eng'; location.reload()">
-                    <img src="img/uk_icon.png" alt="english" class="lang-icon">
-                </a>
-                <a href="#" onclick="window.location.href='#es'; location.reload()">
-                    <img src="img/spain_icon.png" alt="español" class="lang-icon">
-                </a>
+<body class="dark">
+  <header class="header">
+    <div class="switches">
+      <div id="toggle-theme" class="toggle-theme">
+        <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon-theme" class="toggle-theme__icon">
+      </div>
+    </div>
+    <div id="flags" class="flags">
+      <div class="flags__item" data-language="es">
+        <img class="flags__img" src="/assets/icons/es.svg" alt="spanish">
+      </div>
+      <div class="flags__item" data-language="en">
+        <img class="flags__img" src="/assets/icons/gb.svg" alt="english">
+      </div>
+    </div>
+    <div class="switches">
+      <div id="projects-toogle__item" class="toggle-theme">
+        <img src="/assets/icons/javascript.svg" alt="projects-toggle__icon" class="projects-toggle__icon"
+          id="projects-toggle__icon">
+        <p id="projects-toggle__text" class="toggle-theme__text" data-section="others"
+          data-value="mainProjectsIcon__text">JavaScript examples</p>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <!--Section 01-->
+    <section class="column column--left">
+      <!--PROFILE CARD-->
+      <article class="card card--profile">
+        <!--Picture-->
+        <div class="card__image-container">
+          <img src="assets/images/fotico.png" alt="profile">
+        </div>
+        <!--Card header-->
+        <div class="card__header">
+          <h2 class="card__title">Alexandre M. Balata Souto</h2>
+          <p class="card__subtitle" data-section="profile" data-value="rol">Web developer</p>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:balatasouto@gmail.com">
+                balatasouto@gmail.com
+              </a>
             </div>
-            <p id="welcomeId" class="px-3">
-                Welcome everyone!
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"></i>
+              <a href="tel:649101182">
+                +34-649101182
+              </a>
+            </div>
+            <p class="card__text" data-section="profile" data-value="description">
+              Web developer and video game lover. Always eager to learn and face new challenges.
             </p>
+          </div>
         </div>
-
-        <div class="row">
-            <div class="col-12 text-center mt-3">
-                <img src="img/foto-perfil.png" alt="foto-perfil" class="rounded-circle avatar">
-            </div>
+      </article>
+      <!--Experience-->
+      <article class="card card--experience">
+        <h2 class="card__title" data-section="profile" data-value="experience-title">Experiences</h2>
+        <div class="experience">
+          <div class="experience__info">
+            <p class="experience__time" data-section="experience" data-value="first-job-dates">
+              February 2017 - Current
+            </p>
+            <h3 class="experience__job" data-section="experience" data-value="first-job-title">Front End Developer</h3>
+            <p class="experience_description" data-section="experience" data-value="first-job-description">
+              Development of forms and new functionalities through Content Server elements such as Livereports and
+              Webreports.
+            </p>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center display-4 text-white" id="titleId">Alexandre M. Balata Souto's Portfolio</h1>
-            </div>
+        <div class="experience">
+          <div class="experience__info">
+            <p class="experience__time" data-section="experience" data-value="second-job-dates">
+              May 2020 - June 2020 (1 month)
+            </p>
+            <h3 class="experience__job" data-section="experience" data-value="second-job-title">Junior Developer
+              (Intership)</h3>
+            <p class="experience_description" data-section="experience" data-value="second-job-description">
+              Testing and development of new functionalities with the Laravel framework
+            </p>
+          </div>
         </div>
-        <div class="d-flex justify-content-center">
-            <div class="m-2">
-                <a href="https://github.com/AlexandreBalataSouto"><i class="fab fa-github fa-3x"></i></a>
-            </div>
-            <div class="m-2">
-                <a href="https://www.linkedin.com/in/alexandre-manuel-balata-souto-b166621a6/">
-                    <i class="fab fa-linkedin fa-3x"></i>
-                </a>
-            </div>
+        <div class="experience">
+          <div class="experience__info">
+            <p class="experience__time" data-section="experience" data-value="third-job-dates">
+              March 2015 - August 2015 (5 months)
+            </p>
+            <h3 class="experience__job" data-section="experience" data-value="third-job-title">Administrative Assistant
+            </h3>
+            <p class="experience_description" data-section="experience" data-value="third-job-description">
+              Helped to lighten the workload as well as other administrative functions
+            </p>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 mt-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="img/js-logo.png" class="card-img-top" alt="foto-javascript-logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Javascrip</h5>
-                        <p class="card-text" id="javascriptId"></p>
-                    </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="javascript/index.html" class="btn btn-dark btn-block" id="goToExamples"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="img/kdb_logo.png" class="card-img-top" alt="foto-kdb-logo">
-                    <div class="card-body">
-                        <h5 class="card-title">KDB</h5>
-                        <small class="projectDate" id="projectDate04"></small>
-                        <p class="card-text" id="kdbId"></p>
-                    </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="http://185.254.207.146/" class="btn btn-dark btn-block" id="goToKDB"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img class="card-img-top" src="img/vue_laravel.png" alt="foto-vue-laravel-logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Vue-Laravel</h5>
-                        <small class="projectDate" id="projectDate08"></small>
-                        <p class="card-text" id="vueLaravelId"></p>
-                    </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="https://lit-thicket-65717.herokuapp.com/" class="btn btn-dark btn-block"
-                            id="goToVueLaravel"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 mt-5">
-                <div class="card h-100" style="width: 18rem;">
-                    <img class="card-img-top" src="img/vue-quiz-logo.png" alt="foto-vue-quiz-logo">
-                    <div class="card-body">
-                        <h5 class="card-title">Vue Quiz</h5>
-                        <small class="projectDate" id="projectDate09"></small>
-                        <p class="card-text" id="vueQuizId"></p>
-                    </div>
-                    <div class="card-footer bg-transparent">
-                        <a href="https://vue-app-quiz.herokuapp.com/" class="btn btn-dark btn-block"
-                            id="goToVueQuiz"></a>
-                    </div>
-                </div>
-            </div>
+      </article>
+    </section>
+    <!--END Section 01-->
+    <!--Section main-projects-->
+    <section class="column column--right">
+      </article>
+      <article class="card card--project card--mainProject">
+        <div class="card__image-container">
+          <img src="assets/images/kdb.png" alt="project" class="card__image">
         </div>
-    </div>
-    <div class="animate-box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#Laravel</span>
+            <span class="project__tag">#JavaScript</span>
+            <span class="project__tag">#PHP</span>
+            <span class="project__tag">#Materialize</span>
+          </div>
+          <h2 class="card__title">KDB (Karate DataBase)</h2>
+          <p class="card__text" data-section="projects" data-value="first-project-description">
+            Here is my Superior Grade Formative Course final project of web application development. The idea was to
+            help a small
+            karate dojo of Lanzarote with the management of the students data, asistence and events. This project was
+            made with
+            <strong>Laravel</strong>, <strong>Materialize</strong> and it´s <strong>responsive</strong>.
+          </p>
+          <div class="buttons">
+            <a href="http://185.254.207.146/" class="button button--primary">Demo</a>
+            <a href="https://github.com/AlexandreBalataSouto/kdb" class="button button--code">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project card--mainProject">
+        <div class="card__image-container">
+          <img src="assets/images/vue-laravel.png" alt="project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#Laravel</span>
+            <span class="project__tag">#Vue js</span>
+          </div>
+          <h2 class="card__title">Vue-Laravel</h2>
+          <p class="card__text" data-section="projects" data-value="second-project-description">
+            A SPA (single page application) made with the javascript framework <strong>Vue.js</strong> and the php
+            framework
+            <strong>Laravel</strong>
+          </p>
+          <div class="buttons">
+            <a href="https://lit-thicket-65717.herokuapp.com/" class="button button--primary">Demo</a>
+            <a href="https://github.com/AlexandreBalataSouto/vue-laravel" class="button button--code">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project card--mainProject">
+        <div class="card__image-container">
+          <img src="assets/images/vue-quiz.png" alt="project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#Vue js</span>
+          </div>
+          <h2 class="card__title">Vue Quiz</h2>
+          <p class="card__text" data-section="projects" data-value="third-project-description">
+            This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>. All test questions
+            are from here: <a href='https://opentdb.com/'>Open Trivia Database</a>
+          </p>
+          <div class="buttons">
+            <a href="https://vue-app-quiz.herokuapp.com/" class="button button--primary">Demo</a>
+            <a href="https://github.com/AlexandreBalataSouto/vue-app-quiz" class="button button--code">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project card--javascript">
+        <div class="card__image-container">
+          <img src="assets/images/keyboard.png" alt="project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#JavaScript</span>
+          </div>
+          <h2 class="card__title" data-section="projects" data-value="keyboard-javascript-title">Keyboard</h2>
+          <p class="card__text" data-section="projects" data-value="keyboard-javascript-description">
+            This is a virtual keyboard made with <strong>Javascrip</strong> and <strong>Jquery</strong>. Just click on
+            the keys with
+            the mouse or type the keys of your computer.
+          </p>
+          <div class="buttons">
+            <a href="javascriptsProjects/keyboard/keyboard.html" class="button button--primary">Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project card--javascript">
+        <div class="card__image-container">
+          <img src="assets/images/tic-tac-toe.png" alt="project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#JavaScript</span>
+          </div>
+          <h2 class="card__title" data-section="projects" data-value="tictactoe-javascript-title">Tic tac toe</h2>
+          <p class="card__text" data-section="projects" data-value="tictactoe-javascript-description">
+            Classic tic tac toe game made with <strong>Javascrip</strong> and <strong>Jquery</strong>
+          </p>
+          <div class="buttons">
+            <a href="javascriptsProjects/tic-tac-toe/tic-tac-toe.html" class="button button--primary">Demo</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project card--javascript">
+        <div class="card__image-container">
+          <img src="assets/images/calculator.png" alt="project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#JavaScript</span>
+          </div>
+          <h2 class="card__title" data-section="projects" data-value="calculator-javascript-title">Calculator</h2>
+          <p class="card__text" data-section="projects" data-value="calculator-javascript-description">
+            A calculator made with <strong>Javascrip</strong>
+          </p>
+          <div class="buttons">
+            <a href="javascriptsProjects/calculator/calculator.html" class="button button--primary">Demo</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!--END Section main-projects-->
+  </main>
+  <script src="js/scripts.js"></script>
 </body>
-<script src="js/main.js"></script>
+
 </html>
