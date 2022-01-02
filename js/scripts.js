@@ -10,7 +10,8 @@ const textsToChange = document.querySelectorAll('[data-section]');
 const mainProjects = document.querySelectorAll('.card--mainProject');
 const javascriptProjects = document.querySelectorAll('.card--javascript');
 let isJavascriptDisplayed = false;
-let appLanguage = 'en'
+let appLanguage = 'en';
+let screenWidth = document.body.clientWidth;
 
 //Hide JavaScript projects
 javascriptProjects.forEach((item) => {
@@ -48,7 +49,7 @@ toggleTheme.addEventListener('click', () => {
 });
 
 //Toggle javascript projects
-toggleProjects.addEventListener('click', () => {
+toggleProjects.addEventListener('click', (event) => {
     if (isJavascriptDisplayed == false) {
 
         toggleIconProjects.src = 'assets/icons/mainProjects.svg'
@@ -88,4 +89,36 @@ toggleProjects.addEventListener('click', () => {
 
         isJavascriptDisplayed = false;
     }
+
+    if (screenWidth < 720) {
+        smoothScroll()
+    }
 });
+
+window.addEventListener('resize', () => {
+    screenWidth = document.body.clientWidth;
+})
+
+function smoothScroll() {
+    const targetPosition = document.getElementById('projectSection').offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000;
+    let start = null;
+
+    window.requestAnimationFrame(step);
+
+    function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+        if (progress < duration) window.requestAnimationFrame(step);
+    }
+}
+
+function easeInOutCubic(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t * t + b;
+    t -= 2;
+    return c / 2 * (t * t * t + 2) + b;
+};

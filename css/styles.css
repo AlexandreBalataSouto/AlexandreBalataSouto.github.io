@@ -8,6 +8,10 @@
     --transition:color 0.1s, background-color 0.2s ease-in-out;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box; /*property allows us to include the padding and border in an element's total width and height.*/
 }
