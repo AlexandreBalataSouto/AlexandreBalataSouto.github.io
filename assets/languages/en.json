@@ -6,13 +6,13 @@
     },
     "experience": {
         "first-job-title": "Front End Developer",
-        "first-job-dates": "February 2017 - Current",
+        "first-job-dates": "February 2021 - Current",
         "first-job-description": "Development of forms and new functionalities through Content Server elements such as Livereports and Webreports.",
         "second-job-title": "Junior Developer (Intership)",
-        "second-job-dates": "May 2020 - June 2020 (1 month)",
+        "second-job-dates": "May 2020 - June 2020",
         "second-job-description": "Testing and development of new functionalities with the Laravel framework",
         "third-job-title": "Administrative Assistant",
-        "third-job-dates": "March 2015 - August 2015 (5 months)",
+        "third-job-dates": "March 2015 - August 2015",
         "third-job-description": "Helped to lighten the workload as well as other administrative functions"
     },
     "projects": {
@@ -28,6 +28,7 @@
         "first-project-title": "KDB",
         "first-project-dates": "June 2020",
         "first-project-description": "Here is my Superior Grade Formative Course final project of web application development. The idea was to help a small karate dojo of Lanzarote with the management of the students data, asistence and events. This project was made with <strong>Laravel</strong>, <strong>Materialize</strong> and it´s <strong>responsive</strong>.",
+        "first-project-access": "<strong>Login Access:</strong><br><strong>Email:</strong> kdb@example.com<br><strong>Password:</strong> csas1234<br>",
         "second-project-title": "Vue + Laravel",
         "second-project-dates": "August 2020",
         "second-project-description": "A SPA (single page application) made with the javascript framework <strong>Vue.js</strong> and the php framework <strong>Laravel</strong>",

@@ -6,13 +6,13 @@
     },
     "experience": {
         "first-job-title": "Desarrollador Front End",
-        "first-job-dates": "Febrero 2017 - Actualmente",
+        "first-job-dates": "Febrero 2021 - Actualmente",
         "first-job-description": "Desarrollo de formularios y nuevas funcionalidades a través de elementos de Content Server como Livereports y Webreports.",
         "second-job-title": "Desarrollador Junior (Practicas)",
-        "second-job-dates": "Mayo 2020 - Junio 2020 (1 mes)",
+        "second-job-dates": "Mayo 2020 - Junio 2020",
         "second-job-description": "Prueba y desarrollo de nuevas funcionalidades con el framework Laravel",
         "third-job-title": "Auxiliar Administrativo",
-        "third-job-dates": "Marzo 2015 - Agosto 2015 (5 meses)",
+        "third-job-dates": "Marzo 2015 - Agosto 2015",
         "third-job-description": "Ayudaba a aligerar la carga de trabajo, así como otras funciones administrativas"
     },
     "projects": {
@@ -28,6 +28,7 @@
         "first-project-title": "KDB",
         "first-project-dates": "Junio 2020",
         "first-project-description": "Aquí está mi proyecto final del Ciclo Formativo de Grado Superior de desarrollo de aplicaciones web. La idea era ayudar a un pequeño dojo de kárate de Lanzarote con la gestión de los datos, asistencias y eventos de los alumnos. Este proyecto se hizo con <strong>Laravel</strong>, <strong>Materialize</strong> y <strong>es responsive</strong>.",
+        "first-project-access": "<strong>Acceso de inicio de sesión:</strong><br><strong>Email:</strong> kdb@example.com<br><strong>Contraseña:</strong> csas1234<br>",
         "second-project-title": "Vue + Laravel",
         "second-project-dates": "Agosto 2020",
         "second-project-description": "Una SPA (single page application) hecha con el framework de javascript <strong>Vue.js</strong> y el framework de php <strong>Laravel</strong>",
