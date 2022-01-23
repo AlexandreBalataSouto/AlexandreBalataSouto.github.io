@@ -49,7 +49,7 @@ toggleTheme.addEventListener('click', () => {
 });
 
 //Toggle javascript projects
-toggleProjects.addEventListener('click', (event) => {
+toggleProjects.addEventListener('click', () => {
     if (isJavascriptDisplayed == false) {
 
         toggleIconProjects.src = 'assets/icons/mainProjects.svg'
