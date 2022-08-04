@@ -1,43 +1,44 @@
 {
-    "profile": {
-        "rol": "Web developer",
-        "description": "Web developer and video game lover. Always eager to learn and face new challenges.",
-        "experience-title": "Experiences"
-    },
-    "experience": {
-        "first-job-title": "Front End Developer",
-        "first-job-dates": "February 2021 - Current",
-        "first-job-description": "Development of forms and new functionalities through Content Server elements such as Livereports and Webreports.",
-        "second-job-title": "Junior Developer (Intership)",
-        "second-job-dates": "May 2020 - June 2020",
-        "second-job-description": "Testing and development of new functionalities with the Laravel framework",
-        "third-job-title": "Administrative Assistant",
-        "third-job-dates": "March 2015 - August 2015",
-        "third-job-description": "Helped to lighten the workload as well as other administrative functions"
-    },
-    "projects": {
-        "keyboard-javascript-title": "Keyboard",
-        "keyboard-javascript-dates": "December 2018",
-        "keyboard-javascript-description": "This is a virtual keyboard made with <strong>Javascrip</strong> and <strong>Jquery</strong>. Just click on the keys with the mouse or type the keys of your computer.",
-        "tictactoe-javascript-title": "Tic Tac Toe",
-        "tictactoe-javascript-description": "Classic tic tac toe game made with <strong>Javascrip</strong> and <strong>Jquery</strong>",
-        "tictactoe-javascript-dates": "December 2018",
-        "calculator-javascript-title": "Calculator",
-        "calculator-javascript-description": "A calculator made with <strong>Javascrip</strong>",
-        "calculator-javascript-dates": "August 2020",
-        "first-project-title": "KDB",
-        "first-project-dates": "June 2020",
-        "first-project-description": "Here is my Superior Grade Formative Course final project of web application development. The idea was to help a small karate dojo of Lanzarote with the management of the students data, asistence and events. This project was made with <strong>Laravel</strong>, <strong>Materialize</strong> and it´s <strong>responsive</strong>.",
-        "first-project-access": "<strong>Login Access:</strong><br><strong>Email:</strong> kdb@example.com<br><strong>Password:</strong> csas1234<br>",
-        "second-project-title": "Vue + Laravel",
-        "second-project-dates": "August 2020",
-        "second-project-description": "A SPA (single page application) made with the javascript framework <strong>Vue.js</strong> and the php framework <strong>Laravel</strong>",
-        "third-project-title": "Vue Quiz",
-        "third-project-dates": "September 2020",
-        "third-project-description": "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>. All test questions are from here: <a href='https: //opentdb.com/'>Open Trivia Database</a>"
-    },
-    "others": {
-        "mainProjectsIcon__text": "Main projects",
-        "javascriptProjectsIcon__text": "JavaScript examples"
-    }
+  "profile": {
+    "rol": "Web developer",
+    "description": "Web developer and video game lover. Always eager to learn and face new challenges.",
+    "experience-title": "Experiences"
+  },
+  "experience": {
+    "first-job-title": "Front End Developer",
+    "first-job-dates": "February 2021 - Current",
+    "first-job-description": "Development of forms and new functionalities through Content Server elements such as Livereports and Webreports.",
+    "second-job-title": "Junior Developer (Intership)",
+    "second-job-dates": "May 2020 - June 2020",
+    "second-job-description": "Testing and development of new functionalities with the Laravel framework",
+    "third-job-title": "Administrative Assistant",
+    "third-job-dates": "March 2015 - August 2015",
+    "third-job-description": "Helped to lighten the workload as well as other administrative functions"
+  },
+  "projects": {
+    "keyboard-javascript-title": "Keyboard",
+    "keyboard-javascript-dates": "December 2018",
+    "keyboard-javascript-description": "This is a virtual keyboard made with <strong>Javascrip</strong> and <strong>Jquery</strong>. Just click on the keys with the mouse or type the keys of your computer.",
+    "tictactoe-javascript-title": "Tic Tac Toe",
+    "tictactoe-javascript-description": "Classic tic tac toe game made with <strong>Javascrip</strong> and <strong>Jquery</strong>",
+    "tictactoe-javascript-dates": "December 2018",
+    "calculator-javascript-title": "Calculator",
+    "calculator-javascript-description": "A calculator made with <strong>Javascrip</strong>",
+    "calculator-javascript-dates": "August 2020",
+    "first-project-title": "KDB",
+    "first-project-dates": "June 2020",
+    "first-project-description": "Here is my Superior Grade Formative Course final project of web application development. The idea was to help a small karate dojo of Lanzarote with the management of the students data, asistence and events. This project was made with <strong>Laravel</strong>, <strong>Materialize</strong> and it´s <strong>responsive</strong>.",
+    "first-project-access": "<strong>Login Access:</strong><br><strong>Email:</strong> kdb@example.com<br><strong>Password:</strong> csas1234<br>",
+    "second-project-title": "Vue + Laravel",
+    "second-project-dates": "August 2020",
+    "second-project-description": "A SPA (single page application) made with the javascript framework <strong>Vue.js</strong> and the php framework <strong>Laravel</strong>",
+    "third-project-title": "Vue Quiz",
+    "third-project-dates": "September 2020",
+    "third-project-description": "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>. All test questions are from here: <a href='https: //opentdb.com/'>Open Trivia Database</a>",
+    "reactMini-project-description": "Mini project made it with React."
+  },
+  "others": {
+    "mainProjectsIcon__text": "Main projects",
+    "javascriptProjectsIcon__text": "JavaScript examples"
+  }
 }

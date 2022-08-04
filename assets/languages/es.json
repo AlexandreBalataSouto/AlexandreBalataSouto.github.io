@@ -1,43 +1,44 @@
 {
-    "profile": {
-        "rol": "Desarrollador web",
-        "description": "Desarrollador web y amante de los videojuegos. Siempre con ganas de aprender y de afrontar nuevos retos.",
-        "experience-title": "Experiencia"
-    },
-    "experience": {
-        "first-job-title": "Desarrollador Front End",
-        "first-job-dates": "Febrero 2021 - Actualmente",
-        "first-job-description": "Desarrollo de formularios y nuevas funcionalidades a través de elementos de Content Server como Livereports y Webreports.",
-        "second-job-title": "Desarrollador Junior (Practicas)",
-        "second-job-dates": "Mayo 2020 - Junio 2020",
-        "second-job-description": "Prueba y desarrollo de nuevas funcionalidades con el framework Laravel",
-        "third-job-title": "Auxiliar Administrativo",
-        "third-job-dates": "Marzo 2015 - Agosto 2015",
-        "third-job-description": "Ayudaba a aligerar la carga de trabajo, así como otras funciones administrativas"
-    },
-    "projects": {
-        "keyboard-javascript-title": "Teclado",
-        "keyboard-javascript-dates": "Diciembre 2018",
-        "keyboard-javascript-description": "Esto es un teclado virtual hecho con <strong>Javascrip</strong> y <strong>Jquery</strong>. Simplemente haga click en las teclas con el raton o pulse las teclas de su ordenador.",
-        "tictactoe-javascript-title": "Tres en raya",
-        "tictactoe-javascript-description": "Clasico juego del tres en raya hecho con <strong>Javascrip</strong> and <strong>Jquery</strong>",
-        "tictactoe-javascript-dates": "Diciembre 2018",
-        "calculator-javascript-title": "Calculadora",
-        "calculator-javascript-description": "Una calculadora hecha con <strong>Javascrip</strong>",
-        "calculator-javascript-dates": "Agosto 2020",
-        "first-project-title": "KDB",
-        "first-project-dates": "Junio 2020",
-        "first-project-description": "Aquí está mi proyecto final del Ciclo Formativo de Grado Superior de desarrollo de aplicaciones web. La idea era ayudar a un pequeño dojo de kárate de Lanzarote con la gestión de los datos, asistencias y eventos de los alumnos. Este proyecto se hizo con <strong>Laravel</strong>, <strong>Materialize</strong> y <strong>es responsive</strong>.",
-        "first-project-access": "<strong>Acceso de inicio de sesión:</strong><br><strong>Email:</strong> kdb@example.com<br><strong>Contraseña:</strong> csas1234<br>",
-        "second-project-title": "Vue + Laravel",
-        "second-project-dates": "Agosto 2020",
-        "second-project-description": "Una SPA (single page application) hecha con el framework de javascript <strong>Vue.js</strong> y el framework de php <strong>Laravel</strong>",
-        "third-project-title": "Vue Quiz",
-        "third-project-dates": "Septiembre 2020",
-        "third-project-description": "Esto es un test sobre cine hecho con el framework de javascript <strong>Vue.js</strong>. Todas las preguntas del test son de aqui: <a href='https: //opentdb.com/'>Open Trivia Database</a>"
-    },
-    "others": {
-        "mainProjectsIcon__text": "Proyectos",
-        "javascriptProjectsIcon__text": "Ejemplos de javaScript"
-    }
+  "profile": {
+    "rol": "Desarrollador web",
+    "description": "Desarrollador web y amante de los videojuegos. Siempre con ganas de aprender y de afrontar nuevos retos.",
+    "experience-title": "Experiencia"
+  },
+  "experience": {
+    "first-job-title": "Desarrollador Front End",
+    "first-job-dates": "Febrero 2021 - Actualmente",
+    "first-job-description": "Desarrollo de formularios y nuevas funcionalidades a través de elementos de Content Server como Livereports y Webreports.",
+    "second-job-title": "Desarrollador Junior (Practicas)",
+    "second-job-dates": "Mayo 2020 - Junio 2020",
+    "second-job-description": "Prueba y desarrollo de nuevas funcionalidades con el framework Laravel",
+    "third-job-title": "Auxiliar Administrativo",
+    "third-job-dates": "Marzo 2015 - Agosto 2015",
+    "third-job-description": "Ayudaba a aligerar la carga de trabajo, así como otras funciones administrativas"
+  },
+  "projects": {
+    "keyboard-javascript-title": "Teclado",
+    "keyboard-javascript-dates": "Diciembre 2018",
+    "keyboard-javascript-description": "Esto es un teclado virtual hecho con <strong>Javascrip</strong> y <strong>Jquery</strong>. Simplemente haga click en las teclas con el raton o pulse las teclas de su ordenador.",
+    "tictactoe-javascript-title": "Tres en raya",
+    "tictactoe-javascript-description": "Clasico juego del tres en raya hecho con <strong>Javascrip</strong> and <strong>Jquery</strong>",
+    "tictactoe-javascript-dates": "Diciembre 2018",
+    "calculator-javascript-title": "Calculadora",
+    "calculator-javascript-description": "Una calculadora hecha con <strong>Javascrip</strong>",
+    "calculator-javascript-dates": "Agosto 2020",
+    "first-project-title": "KDB",
+    "first-project-dates": "Junio 2020",
+    "first-project-description": "Aquí está mi proyecto final del Ciclo Formativo de Grado Superior de desarrollo de aplicaciones web. La idea era ayudar a un pequeño dojo de kárate de Lanzarote con la gestión de los datos, asistencias y eventos de los alumnos. Este proyecto se hizo con <strong>Laravel</strong>, <strong>Materialize</strong> y <strong>es responsive</strong>.",
+    "first-project-access": "<strong>Acceso de inicio de sesión:</strong><br><strong>Email:</strong> kdb@example.com<br><strong>Contraseña:</strong> csas1234<br>",
+    "second-project-title": "Vue + Laravel",
+    "second-project-dates": "Agosto 2020",
+    "second-project-description": "Una SPA (single page application) hecha con el framework de javascript <strong>Vue.js</strong> y el framework de php <strong>Laravel</strong>",
+    "third-project-title": "Vue Quiz",
+    "third-project-dates": "Septiembre 2020",
+    "third-project-description": "Esto es un test sobre cine hecho con el framework de javascript <strong>Vue.js</strong>. Todas las preguntas del test son de aqui: <a href='https: //opentdb.com/'>Open Trivia Database</a>",
+    "reactMini-project-description": "Mini proyecto hecho con React."
+  },
+  "others": {
+    "mainProjectsIcon__text": "Proyectos",
+    "javascriptProjectsIcon__text": "Ejemplos de javaScript"
+  }
 }
