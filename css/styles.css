@@ -165,12 +165,6 @@ body.dark {
   line-height: 1.6; /*Space between lines*/
 }
 
-.card__codewars {
-  border: 2px solid var(--primary-color);
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-}
-
 .test {
   display: flex;
 }
