@@ -36,6 +36,7 @@ body {
   color: var(--text-color);
   transition: var(--transition);
   font-family: sans-serif;
+  display: grid;
 }
 
 body.dark {
@@ -118,8 +119,12 @@ body.dark {
 @media screen and (min-width: 720px) {
   /*The more content there is, the more it will occupy*/
   .column--right {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, min-content);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-rows: repeat(
+      5,
+      min-content
+    ); /*Each time we add a new project increase the first parameter*/
     align-items: start; /*Fit card to content*/
   }
 }
@@ -139,6 +144,10 @@ body.dark {
   border-radius: var(--border-radius);
   transition: var(--transition);
   overflow: hidden;
+}
+
+.card__image-container img {
+  width: 100%;
 }
 
 .cad__header {
