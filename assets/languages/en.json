@@ -35,7 +35,8 @@
     "third-project-title": "Vue Quiz",
     "third-project-dates": "September 2020",
     "third-project-description": "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>. All test questions are from here: <a href='https: //opentdb.com/'>Open Trivia Database</a>",
-    "reactMini-project-description": "Mini project made it with React."
+    "reactMini-project-description": "Mini project made it with React.",
+    "react-website-responsive": "A website <strong>responsive</strong> made with <strong>React</strong>."
   },
   "others": {
     "mainProjectsIcon__text": "Main projects",
