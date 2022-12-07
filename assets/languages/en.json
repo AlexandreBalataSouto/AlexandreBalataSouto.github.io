@@ -32,11 +32,9 @@
     "second-project-title": "Vue + Laravel",
     "second-project-dates": "August 2020",
     "second-project-description": "A SPA (single page application) made with the javascript framework <strong>Vue.js</strong> and the php framework <strong>Laravel</strong>",
-    "third-project-title": "Vue Quiz",
-    "third-project-dates": "September 2020",
-    "third-project-description": "This is a quiz about cinema made with the javascript framework <strong>Vue.js</strong>. All test questions are from here: <a href='https: //opentdb.com/'>Open Trivia Database</a>",
     "reactMini-project-description": "Mini project made it with React.",
-    "react-website-responsive": "A website <strong>responsive</strong> made with <strong>React</strong>."
+    "react-website-responsive": "A website <strong>responsive</strong> made with <strong>React</strong>.",
+    "react-frontend-challenge": "This is a <strong>React</strong> frontend challenge, the description of the challenge as well as the description of the application is in the <strong>README</strong> file."
   },
   "others": {
     "mainProjectsIcon__text": "Main projects",
