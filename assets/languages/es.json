@@ -28,9 +28,6 @@
     "calculator-javascript-title": "Calculadora",
     "calculator-javascript-description": "Una calculadora hecha con <strong>Javascrip</strong>",
     "calculator-javascript-dates": "Agosto 2020",
-    "second-project-title": "Vue + Laravel",
-    "second-project-dates": "Agosto 2020",
-    "second-project-description": "Una SPA (single page application) hecha con el framework de javascript <strong>Vue.js</strong> y el framework de php <strong>Laravel</strong>",
     "reactMini-project-description": "Mini proyecto hecho con React.",
     "react-website-responsive": "Una pagina web <strong>responsive</strong> hecha con <strong>React</strong>.",
     "react-frontend-challenge": "Esto es un desafío frontend de <strong>React</strong>, la descripción del desafio asi como el de la aplicación esta en el archivo <strong>README</strong>."
